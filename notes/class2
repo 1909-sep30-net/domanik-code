@@ -1,0 +1,66 @@
+Class 2
+
+Version control system: (VCS)
+    - Helps us manage our software
+        - GIT, SVN, Hg, TFS
+
+    Stuff they do 
+        centralized: One repo where the whole project will live
+		- Can be hosted on cloud
+		- Can be on server 
+		- if want connect to server they connect to where it lives and has older version of code to compare 
+			- Source of truth one true 
+
+        distuibute:
+		- Git is a distributed  (DVCS)
+			- If you have copy of code you have access to whole history of previous copies and current code
+			- Git has good property compared to other SVN
+
+4 PLACES NEED TO JUGGLE IN MIND 
+ 	* Working directory
+		- Make changes in working directory 
+		- Parts other programs can see besides git
+         |
+	   git add
+	     |
+	* Index
+		-Staging area
+		- Put stuff before you commit it 
+          |
+	 git clone
+          |
+	* local repo
+		- Graph of commits 
+		- Graph because every commit has a previous commit and you can branch off so won’t be a straight line
+		- They connect again for a merge
+         |
+	git push
+	     |
+	*remote repo
+
+
+_____________________
+	Commands
+
+git clone: Creates a local repo from a line repo
+	- Is a folder on local computer and .git controls it 
+
+git add:  Adds code to staging area (add to get ready to commit)
+
+git commit: updates local repo
+
+git reset: to go back and undo add
+
+git push: Pushes up to remote repo
+
+git pull: To pull to local repo
+	- Clean up working directory before you pull
+
+git log: A way to search and view recent history in current development
+
+git status: To tell you whats the state of the project
+	- ex) tell if files not commit
+
+git diff: compares two file and shows how they are different
+
+git init: Creates a local repo
